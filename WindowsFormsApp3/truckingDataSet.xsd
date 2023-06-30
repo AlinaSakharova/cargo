@@ -1,0 +1,1387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="truckingDataSet" targetNamespace="http://tempuri.org/truckingDataSet.xsd" xmlns:mstns="http://tempuri.org/truckingDataSet.xsd" xmlns="http://tempuri.org/truckingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="truckingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="truckingConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp3.Properties.Settings.GlobalReference.Default.truckingConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Весь_транспортTableAdapter" GeneratorDataComponentClassName="Весь_транспортTableAdapter" Name="Весь_транспорт" UserDataComponentName="Весь_транспортTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Весь_транспорт" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_машины, Госномер, Вместимость_кг, Объем_кузова_м3 FROM dbo.Весь_транспорт</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_машины" DataSetColumn="Код_машины" />
+              <Mapping SourceColumn="Госномер" DataSetColumn="Госномер" />
+              <Mapping SourceColumn="Вместимость_кг" DataSetColumn="Вместимость_кг" />
+              <Mapping SourceColumn="Объем_кузова_м3" DataSetColumn="Объем_кузова_м3" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Вид_грузаTableAdapter" GeneratorDataComponentClassName="Вид_грузаTableAdapter" Name="Вид_груза" UserDataComponentName="Вид_грузаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Вид_груза" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_Груза, Вид_Груза FROM dbo.Вид_груза</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_Груза" DataSetColumn="Код_Груза" />
+              <Mapping SourceColumn="Вид_Груза" DataSetColumn="Вид_Груза" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Все_водителиTableAdapter" GeneratorDataComponentClassName="Все_водителиTableAdapter" Name="Все_водители" UserDataComponentName="Все_водителиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Все_водители" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ФИО_водителя, Стаж, Код_водителя FROM dbo.Все_водители</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ФИО_водителя" DataSetColumn="ФИО_водителя" />
+              <Mapping SourceColumn="Стаж" DataSetColumn="Стаж" />
+              <Mapping SourceColumn="Код_водителя" DataSetColumn="Код_водителя" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Все_городаTableAdapter" GeneratorDataComponentClassName="Все_городаTableAdapter" Name="Все_города" UserDataComponentName="Все_городаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Все_города" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_города, Город, Код_области FROM dbo.Все_города</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_города" DataSetColumn="Код_города" />
+              <Mapping SourceColumn="Город" DataSetColumn="Город" />
+              <Mapping SourceColumn="Код_области" DataSetColumn="Код_области" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Все_города" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_города, Город, Код_области
+FROM   Все_города
+WHERE (Код_области = @Param1)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Param1" ColumnName="Код_области" DataSourceName="trucking.dbo.Все_города" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Param1" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Код_области" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Все_областиTableAdapter" GeneratorDataComponentClassName="Все_областиTableAdapter" Name="Все_области" UserDataComponentName="Все_областиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Все_области" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_области, Область FROM dbo.Все_области</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_области" DataSetColumn="Код_области" />
+              <Mapping SourceColumn="Область" DataSetColumn="Область" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Все_таблицыTableAdapter" GeneratorDataComponentClassName="Все_таблицыTableAdapter" Name="Все_таблицы" UserDataComponentName="Все_таблицыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Все_таблицы" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Город, [Код_заказа_заказ-груз], Код_Получателя, Код_Отправителя, ФИО_отправителя, Паспорт_отправителя, Телефон_отправителя, Адрес_отправителя, Область, ФИО_получателя, Паспорт_получателя, Телефон_получателя, Адрес_получателя, Код_рейса, [Код_заказа_заказ-рейс], Код_груза, Expr8, Расстояние, Стоимость, Объем_м3, вес_кг, объявленная_стоимость_руб, Вид_Груза, Объем_кузова, Вместимость_кузова, Госномер, Объем_груза_м3, Вес_груза_кг, ФИО_водителя, Стаж FROM dbo.Все_таблицы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Город" DataSetColumn="Город" />
+              <Mapping SourceColumn="Код_заказа_заказ-груз" DataSetColumn="Код_заказа_заказ-груз" />
+              <Mapping SourceColumn="Код_Получателя" DataSetColumn="Код_Получателя" />
+              <Mapping SourceColumn="Код_Отправителя" DataSetColumn="Код_Отправителя" />
+              <Mapping SourceColumn="ФИО_отправителя" DataSetColumn="ФИО_отправителя" />
+              <Mapping SourceColumn="Паспорт_отправителя" DataSetColumn="Паспорт_отправителя" />
+              <Mapping SourceColumn="Телефон_отправителя" DataSetColumn="Телефон_отправителя" />
+              <Mapping SourceColumn="Адрес_отправителя" DataSetColumn="Адрес_отправителя" />
+              <Mapping SourceColumn="Область" DataSetColumn="Область" />
+              <Mapping SourceColumn="ФИО_получателя" DataSetColumn="ФИО_получателя" />
+              <Mapping SourceColumn="Паспорт_получателя" DataSetColumn="Паспорт_получателя" />
+              <Mapping SourceColumn="Телефон_получателя" DataSetColumn="Телефон_получателя" />
+              <Mapping SourceColumn="Адрес_получателя" DataSetColumn="Адрес_получателя" />
+              <Mapping SourceColumn="Код_рейса" DataSetColumn="Код_рейса" />
+              <Mapping SourceColumn="Код_заказа_заказ-рейс" DataSetColumn="Код_заказа_заказ-рейс" />
+              <Mapping SourceColumn="Код_груза" DataSetColumn="Код_груза" />
+              <Mapping SourceColumn="Expr8" DataSetColumn="Expr8" />
+              <Mapping SourceColumn="Расстояние" DataSetColumn="Расстояние" />
+              <Mapping SourceColumn="Стоимость" DataSetColumn="Стоимость" />
+              <Mapping SourceColumn="Объем_м3" DataSetColumn="Объем_м3" />
+              <Mapping SourceColumn="вес_кг" DataSetColumn="вес_кг" />
+              <Mapping SourceColumn="объявленная_стоимость_руб" DataSetColumn="объявленная_стоимость_руб" />
+              <Mapping SourceColumn="Вид_Груза" DataSetColumn="Вид_Груза" />
+              <Mapping SourceColumn="Объем_кузова" DataSetColumn="Объем_кузова" />
+              <Mapping SourceColumn="Вместимость_кузова" DataSetColumn="Вместимость_кузова" />
+              <Mapping SourceColumn="Госномер" DataSetColumn="Госномер" />
+              <Mapping SourceColumn="Объем_груза_м3" DataSetColumn="Объем_груза_м3" />
+              <Mapping SourceColumn="Вес_груза_кг" DataSetColumn="Вес_груза_кг" />
+              <Mapping SourceColumn="ФИО_водителя" DataSetColumn="ФИО_водителя" />
+              <Mapping SourceColumn="Стаж" DataSetColumn="Стаж" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ВсеГрузыВЗаказеTableAdapter" GeneratorDataComponentClassName="ВсеГрузыВЗаказеTableAdapter" Name="ВсеГрузыВЗаказе" UserDataComponentName="ВсеГрузыВЗаказеTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ВсеГрузыВЗаказе" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код, [ФИО получ], [Паспорт получ], [Телефон получ], [ФИО отпр], [Паспорт отпр], [Телефон отпр], Вид_Груза, [Город получателя], [Город отправителя], [Адрес оптравителя], [Адрес получателя], Код_заказа, Код_груза, Расстояние, Стоимость FROM dbo.ВсеГрузыВЗаказе</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код" DataSetColumn="Код" />
+              <Mapping SourceColumn="ФИО получ" DataSetColumn="ФИО получ" />
+              <Mapping SourceColumn="Паспорт получ" DataSetColumn="Паспорт получ" />
+              <Mapping SourceColumn="Телефон получ" DataSetColumn="Телефон получ" />
+              <Mapping SourceColumn="ФИО отпр" DataSetColumn="ФИО отпр" />
+              <Mapping SourceColumn="Паспорт отпр" DataSetColumn="Паспорт отпр" />
+              <Mapping SourceColumn="Телефон отпр" DataSetColumn="Телефон отпр" />
+              <Mapping SourceColumn="Вид_Груза" DataSetColumn="Вид_Груза" />
+              <Mapping SourceColumn="Город получателя" DataSetColumn="Город получателя" />
+              <Mapping SourceColumn="Город отправителя" DataSetColumn="Город отправителя" />
+              <Mapping SourceColumn="Адрес оптравителя" DataSetColumn="Адрес оптравителя" />
+              <Mapping SourceColumn="Адрес получателя" DataSetColumn="Адрес получателя" />
+              <Mapping SourceColumn="Код_заказа" DataSetColumn="Код_заказа" />
+              <Mapping SourceColumn="Код_груза" DataSetColumn="Код_груза" />
+              <Mapping SourceColumn="Расстояние" DataSetColumn="Расстояние" />
+              <Mapping SourceColumn="Стоимость" DataSetColumn="Стоимость" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ГрузыTableAdapter" GeneratorDataComponentClassName="ГрузыTableAdapter" Name="Грузы" UserDataComponentName="ГрузыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Грузы" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_Груза, Объем_м3, вес_кг, объявленная_стоимость_руб, Код_ВидГруза, Вид_Груза FROM dbo.Грузы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_Груза" DataSetColumn="Код_Груза" />
+              <Mapping SourceColumn="Объем_м3" DataSetColumn="Объем_м3" />
+              <Mapping SourceColumn="вес_кг" DataSetColumn="вес_кг" />
+              <Mapping SourceColumn="объявленная_стоимость_руб" DataSetColumn="объявленная_стоимость_руб" />
+              <Mapping SourceColumn="Код_ВидГруза" DataSetColumn="Код_ВидГруза" />
+              <Mapping SourceColumn="Вид_Груза" DataSetColumn="Вид_Груза" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказыTableAdapter" GeneratorDataComponentClassName="ЗаказыTableAdapter" Name="Заказы" UserDataComponentName="ЗаказыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Заказы" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_Заказа, [ФИО отправителя], [Паспорт отправителя], [Телефон отправителя], [Адрес отправителя], [ФИО получателя], [Телефон получателя], [Адрес получателя], [Паспорт получателя], [Город получ], [Город отпр], Код_Отправителя, Код_Получателя FROM dbo.Заказы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_Заказа" DataSetColumn="Код_Заказа" />
+              <Mapping SourceColumn="ФИО отправителя" DataSetColumn="ФИО отправителя" />
+              <Mapping SourceColumn="Паспорт отправителя" DataSetColumn="Паспорт отправителя" />
+              <Mapping SourceColumn="Телефон отправителя" DataSetColumn="Телефон отправителя" />
+              <Mapping SourceColumn="Адрес отправителя" DataSetColumn="Адрес отправителя" />
+              <Mapping SourceColumn="ФИО получателя" DataSetColumn="ФИО получателя" />
+              <Mapping SourceColumn="Телефон получателя" DataSetColumn="Телефон получателя" />
+              <Mapping SourceColumn="Адрес получателя" DataSetColumn="Адрес получателя" />
+              <Mapping SourceColumn="Паспорт получателя" DataSetColumn="Паспорт получателя" />
+              <Mapping SourceColumn="Город получ" DataSetColumn="Город получ" />
+              <Mapping SourceColumn="Город отпр" DataSetColumn="Город отпр" />
+              <Mapping SourceColumn="Код_Отправителя" DataSetColumn="Код_Отправителя" />
+              <Mapping SourceColumn="Код_Получателя" DataSetColumn="Код_Получателя" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ЗаказыНаРейсеTableAdapter" GeneratorDataComponentClassName="ЗаказыНаРейсеTableAdapter" Name="ЗаказыНаРейсе" UserDataComponentName="ЗаказыНаРейсеTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ЗаказыНаРейсе" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_заказа, Код, Госномер, Отправитель, Город FROM dbo.ЗаказыНаРейсе</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_заказа" DataSetColumn="Код_заказа" />
+              <Mapping SourceColumn="Код" DataSetColumn="Код" />
+              <Mapping SourceColumn="Госномер" DataSetColumn="Госномер" />
+              <Mapping SourceColumn="Отправитель" DataSetColumn="Отправитель" />
+              <Mapping SourceColumn="Город" DataSetColumn="Город" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ОтправителиTableAdapter" GeneratorDataComponentClassName="ОтправителиTableAdapter" Name="Отправители" UserDataComponentName="ОтправителиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Отправители" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_Отправителя, ФИО, Паспорт, Телефон, Адрес, Область, Город, Код_области, Код_города FROM dbo.Отправители</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_Отправителя" DataSetColumn="Код_Отправителя" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Паспорт" DataSetColumn="Паспорт" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Область" DataSetColumn="Область" />
+              <Mapping SourceColumn="Город" DataSetColumn="Город" />
+              <Mapping SourceColumn="Код_области" DataSetColumn="Код_области" />
+              <Mapping SourceColumn="Код_города" DataSetColumn="Код_города" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПолучателиTableAdapter" GeneratorDataComponentClassName="ПолучателиTableAdapter" Name="Получатели" UserDataComponentName="ПолучателиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Получатели" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_получателя, ФИО, Паспорт, Телефон, Адрес, Город, Область, Код_области, Код_города FROM dbo.Получатели</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_получателя" DataSetColumn="Код_получателя" />
+              <Mapping SourceColumn="ФИО" DataSetColumn="ФИО" />
+              <Mapping SourceColumn="Паспорт" DataSetColumn="Паспорт" />
+              <Mapping SourceColumn="Телефон" DataSetColumn="Телефон" />
+              <Mapping SourceColumn="Адрес" DataSetColumn="Адрес" />
+              <Mapping SourceColumn="Город" DataSetColumn="Город" />
+              <Mapping SourceColumn="Область" DataSetColumn="Область" />
+              <Mapping SourceColumn="Код_области" DataSetColumn="Код_области" />
+              <Mapping SourceColumn="Код_города" DataSetColumn="Код_города" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="РейсыTableAdapter" GeneratorDataComponentClassName="РейсыTableAdapter" Name="Рейсы" UserDataComponentName="РейсыTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.Рейсы" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Код_рейса, Объем_груза_м3, Вес_груза_кг, Код_транспорта, ФИО_водителя, Госномер, Вместимость_кг, Объем_кузова_м3, Стаж, Код_водителя FROM dbo.Рейсы</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Код_рейса" DataSetColumn="Код_рейса" />
+              <Mapping SourceColumn="Объем_груза_м3" DataSetColumn="Объем_груза_м3" />
+              <Mapping SourceColumn="Вес_груза_кг" DataSetColumn="Вес_груза_кг" />
+              <Mapping SourceColumn="Код_транспорта" DataSetColumn="Код_транспорта" />
+              <Mapping SourceColumn="ФИО_водителя" DataSetColumn="ФИО_водителя" />
+              <Mapping SourceColumn="Госномер" DataSetColumn="Госномер" />
+              <Mapping SourceColumn="Вместимость_кг" DataSetColumn="Вместимость_кг" />
+              <Mapping SourceColumn="Объем_кузова_м3" DataSetColumn="Объем_кузова_м3" />
+              <Mapping SourceColumn="Стаж" DataSetColumn="Стаж" />
+              <Mapping SourceColumn="Код_водителя" DataSetColumn="Код_водителя" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьВидГруза" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьВидГруза" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьВидГруза" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ДобавитьВидГруза">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьВидГруза</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ВидГруза" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьВодителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьВодителя" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьВодителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="ДобавитьВодителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьВодителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ФИО_водителя" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Стаж" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьГород" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьГород" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьГород" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ДобавитьГород">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьГород</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Город" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьГруз" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьГруз" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьГруз" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ДобавитьГруз">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьГруз</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_ВидГруза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@вес_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@объявленная_стоимость" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьГрузВЗаказ" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьГрузВЗаказ" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьГрузВЗаказ" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="ДобавитьГрузВЗаказ">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьГрузВЗаказ</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_груза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Расстояние" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Стоимость" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьЗаказ" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьЗаказ" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьЗаказ" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="ДобавитьЗаказ">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьЗаказ</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Отправителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Получателя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьЗаказНаРейс" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьЗаказНаРейс" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьЗаказНаРейс" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="ДобавитьЗаказНаРейс">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьЗаказНаРейс</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_рейса" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьОбласть" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьОбласть" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьОбласть" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="ДобавитьОбласть">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьОбласть</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Область" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьОтправителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьОтправителя" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьОтправителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="ДобавитьОтправителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьОтправителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ФИО" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Паспорт" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Телефон" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Адрес" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьПолучателя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьПолучателя" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьПолучателя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="ДобавитьПолучателя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьПолучателя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ФИО" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Паспорт" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Телефон" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Адрес" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьРейс" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьРейс" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьРейс" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="ДобавитьРейс">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьРейс</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_водителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_груза_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Вес_груза_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_транспорта" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ДобавитьТранспорт" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ДобавитьТранспорт" MethodsParameterType="CLR" Modifier="Public" Name="ДобавитьТранспорт" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="ДобавитьТранспорт">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ДобавитьТранспорт</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@Госномер" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Вместимость_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_кузова_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьВидГруза" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьВидГруза" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьВидГруза" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="ИзменитьВидГруза">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьВидГруза</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_ВидГруза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ВидГруза" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьВодителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьВодителя" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьВодителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="ИзменитьВодителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьВодителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_водителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@ФИО_водителя" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Стаж" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьГород" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьГород" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьГород" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="ИзменитьГород">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьГород</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Город" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьГруз" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьГруз" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьГруз" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy15" UserSourceName="ИзменитьГруз">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьГруз</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_груза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_ВидГруза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@вес_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@объявленная_стоимость" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьГрузыВЗаказе" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьГрузыВЗаказе" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьГрузыВЗаказе" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy16" UserSourceName="ИзменитьГрузыВЗаказе">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьГрузыВЗаказе</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_груза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Расстояние" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Стоимость" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьЗаказ" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьЗаказ" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьЗаказ" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy17" UserSourceName="ИзменитьЗаказ">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьЗаказ</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Отправителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Получателя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьЗаказНаРейсе" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьЗаказНаРейсе" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьЗаказНаРейсе" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy18" UserSourceName="ИзменитьЗаказНаРейсе">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьЗаказНаРейсе</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_рейса" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьОбласть" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьОбласть" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьОбласть" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy19" UserSourceName="ИзменитьОбласть">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьОбласть</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@Область" Precision="0" ProviderType="NVarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьОтправителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьОтправителя" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьОтправителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy20" UserSourceName="ИзменитьОтправителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьОтправителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Отправителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@ФИО" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Паспорт" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Телефон" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Адрес" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьПолучателя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьПолучателя" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьПолучателя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy21" UserSourceName="ИзменитьПолучателя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьПолучателя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Получателя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@ФИО" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Паспорт" Precision="0" ProviderType="VarChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Телефон" Precision="0" ProviderType="VarChar" Scale="0" Size="11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="Input" ParameterName="@Адрес" Precision="0" ProviderType="VarChar" Scale="0" Size="50" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьРейс" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьРейс" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьРейс" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy22" UserSourceName="ИзменитьРейс">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьРейс</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_рейса" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_водителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_груза_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Вес_груза_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_транспорта" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.ИзменитьТранспорт" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ИзменитьТранспорт" MethodsParameterType="CLR" Modifier="Public" Name="ИзменитьТранспорт" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy23" UserSourceName="ИзменитьТранспорт">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ИзменитьТранспорт</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_транспорта" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nchar" DbType="StringFixedLength" Direction="Input" ParameterName="@Госномер" Precision="0" ProviderType="NChar" Scale="0" Size="10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Вместимость_кг" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="float" DbType="Double" Direction="Input" ParameterName="@Объем_кузова_м3" Precision="53" ProviderType="Float" Scale="0" Size="8" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьВидГруза" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьВидГруза" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьВидГруза" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy24" UserSourceName="УдалитьВидГруза">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьВидГруза</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Груза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьВодителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьВодителя" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьВодителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy25" UserSourceName="УдалитьВодителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьВодителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_водителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьГород" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьГород" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьГород" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy26" UserSourceName="УдалитьГород">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьГород</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Города" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьГруз" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьГруз" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьГруз" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy27" UserSourceName="УдалитьГруз">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьГруз</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Груза" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьГрузыИзЗаказа" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьГрузыИзЗаказа" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьГрузыИзЗаказа" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy28" UserSourceName="УдалитьГрузыИзЗаказа">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьГрузыИзЗаказа</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьЗаказ" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьЗаказ" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьЗаказ" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy29" UserSourceName="УдалитьЗаказ">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьЗаказ</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Заказа" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьЗаказСРейса" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьЗаказСРейса" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьЗаказСРейса" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy30" UserSourceName="УдалитьЗаказСРейса">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьЗаказСРейса</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьОбласть" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьОбласть" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьОбласть" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy31" UserSourceName="УдалитьОбласть">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьОбласть</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_Области" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьОтправителя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьОтправителя" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьОтправителя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy32" UserSourceName="УдалитьОтправителя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьОтправителя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_отправителя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьПолучателя" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьПолучателя" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьПолучателя" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy33" UserSourceName="УдалитьПолучателя">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьПолучателя</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_получателя" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьРейс" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьРейс" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьРейс" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy34" UserSourceName="УдалитьРейс">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьРейс</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_рейса" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="truckingConnectionString (Settings)" DbObjectName="trucking.dbo.УдалитьТранспорт" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="УдалитьТранспорт" MethodsParameterType="CLR" Modifier="Public" Name="УдалитьТранспорт" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy35" UserSourceName="УдалитьТранспорт">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.УдалитьТранспорт</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Код_транспорта" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="truckingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="truckingDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="truckingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Весь_транспорт" msprop:Generator_RowClassName="Весь_транспортRow" msprop:Generator_RowEvHandlerName="Весь_транспортRowChangeEventHandler" msprop:Generator_RowDeletedName="Весь_транспортRowDeleted" msprop:Generator_RowDeletingName="Весь_транспортRowDeleting" msprop:Generator_RowEvArgName="Весь_транспортRowChangeEvent" msprop:Generator_TablePropName="Весь_транспорт" msprop:Generator_RowChangedName="Весь_транспортRowChanged" msprop:Generator_UserTableName="Весь_транспорт" msprop:Generator_RowChangingName="Весь_транспортRowChanging" msprop:Generator_TableClassName="Весь_транспортDataTable" msprop:Generator_TableVarName="tableВесь_транспорт">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_машины" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Код_машины" msprop:Generator_ColumnPropNameInTable="Код_машиныColumn" msprop:Generator_ColumnPropNameInRow="Код_машины" msprop:Generator_ColumnVarNameInTable="columnКод_машины" type="xs:int" />
+              <xs:element name="Госномер" msprop:Generator_UserColumnName="Госномер" msprop:Generator_ColumnPropNameInTable="ГосномерColumn" msprop:Generator_ColumnPropNameInRow="Госномер" msprop:Generator_ColumnVarNameInTable="columnГосномер">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вместимость_кг" msprop:Generator_UserColumnName="Вместимость_кг" msprop:Generator_ColumnPropNameInTable="Вместимость_кгColumn" msprop:Generator_ColumnPropNameInRow="Вместимость_кг" msprop:Generator_ColumnVarNameInTable="columnВместимость_кг" type="xs:double" />
+              <xs:element name="Объем_кузова_м3" msprop:Generator_UserColumnName="Объем_кузова_м3" msprop:Generator_ColumnPropNameInTable="Объем_кузова_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_кузова_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_кузова_м3" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Вид_груза" msprop:Generator_RowClassName="Вид_грузаRow" msprop:Generator_RowEvHandlerName="Вид_грузаRowChangeEventHandler" msprop:Generator_RowDeletedName="Вид_грузаRowDeleted" msprop:Generator_RowDeletingName="Вид_грузаRowDeleting" msprop:Generator_RowEvArgName="Вид_грузаRowChangeEvent" msprop:Generator_TablePropName="Вид_груза" msprop:Generator_RowChangedName="Вид_грузаRowChanged" msprop:Generator_UserTableName="Вид_груза" msprop:Generator_RowChangingName="Вид_грузаRowChanging" msprop:Generator_TableClassName="Вид_грузаDataTable" msprop:Generator_TableVarName="tableВид_груза">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_Груза" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Код_Груза" msprop:Generator_ColumnPropNameInTable="Код_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Код_Груза" msprop:Generator_ColumnVarNameInTable="columnКод_Груза" type="xs:int" />
+              <xs:element name="Вид_Груза" msprop:Generator_UserColumnName="Вид_Груза" msprop:Generator_ColumnPropNameInTable="Вид_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Вид_Груза" msprop:Generator_ColumnVarNameInTable="columnВид_Груза">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Все_водители" msprop:Generator_RowClassName="Все_водителиRow" msprop:Generator_RowEvHandlerName="Все_водителиRowChangeEventHandler" msprop:Generator_RowDeletedName="Все_водителиRowDeleted" msprop:Generator_RowDeletingName="Все_водителиRowDeleting" msprop:Generator_RowEvArgName="Все_водителиRowChangeEvent" msprop:Generator_TablePropName="Все_водители" msprop:Generator_RowChangedName="Все_водителиRowChanged" msprop:Generator_UserTableName="Все_водители" msprop:Generator_RowChangingName="Все_водителиRowChanging" msprop:Generator_TableClassName="Все_водителиDataTable" msprop:Generator_TableVarName="tableВсе_водители">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ФИО_водителя" msprop:Generator_UserColumnName="ФИО_водителя" msprop:Generator_ColumnPropNameInTable="ФИО_водителяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_водителя" msprop:Generator_ColumnVarNameInTable="columnФИО_водителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стаж" msprop:Generator_UserColumnName="Стаж" msprop:Generator_ColumnPropNameInTable="СтажColumn" msprop:Generator_ColumnPropNameInRow="Стаж" msprop:Generator_ColumnVarNameInTable="columnСтаж" type="xs:int" />
+              <xs:element name="Код_водителя" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Код_водителя" msprop:Generator_ColumnPropNameInTable="Код_водителяColumn" msprop:Generator_ColumnPropNameInRow="Код_водителя" msprop:Generator_ColumnVarNameInTable="columnКод_водителя" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Все_города" msprop:Generator_RowClassName="Все_городаRow" msprop:Generator_RowEvHandlerName="Все_городаRowChangeEventHandler" msprop:Generator_RowDeletedName="Все_городаRowDeleted" msprop:Generator_RowDeletingName="Все_городаRowDeleting" msprop:Generator_RowEvArgName="Все_городаRowChangeEvent" msprop:Generator_TablePropName="Все_города" msprop:Generator_RowChangedName="Все_городаRowChanged" msprop:Generator_UserTableName="Все_города" msprop:Generator_RowChangingName="Все_городаRowChanging" msprop:Generator_TableClassName="Все_городаDataTable" msprop:Generator_TableVarName="tableВсе_города">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_города" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Код_города" msprop:Generator_ColumnPropNameInTable="Код_городаColumn" msprop:Generator_ColumnPropNameInRow="Код_города" msprop:Generator_ColumnVarNameInTable="columnКод_города" type="xs:int" />
+              <xs:element name="Город" msprop:Generator_UserColumnName="Город" msprop:Generator_ColumnPropNameInTable="ГородColumn" msprop:Generator_ColumnPropNameInRow="Город" msprop:Generator_ColumnVarNameInTable="columnГород">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_области" msprop:Generator_UserColumnName="Код_области" msprop:Generator_ColumnPropNameInTable="Код_областиColumn" msprop:Generator_ColumnPropNameInRow="Код_области" msprop:Generator_ColumnVarNameInTable="columnКод_области" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Все_области" msprop:Generator_RowClassName="Все_областиRow" msprop:Generator_RowEvHandlerName="Все_областиRowChangeEventHandler" msprop:Generator_RowDeletedName="Все_областиRowDeleted" msprop:Generator_RowDeletingName="Все_областиRowDeleting" msprop:Generator_RowEvArgName="Все_областиRowChangeEvent" msprop:Generator_TablePropName="Все_области" msprop:Generator_RowChangedName="Все_областиRowChanged" msprop:Generator_UserTableName="Все_области" msprop:Generator_RowChangingName="Все_областиRowChanging" msprop:Generator_TableClassName="Все_областиDataTable" msprop:Generator_TableVarName="tableВсе_области">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_области" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Код_области" msprop:Generator_ColumnPropNameInTable="Код_областиColumn" msprop:Generator_ColumnPropNameInRow="Код_области" msprop:Generator_ColumnVarNameInTable="columnКод_области" type="xs:int" />
+              <xs:element name="Область" msprop:Generator_UserColumnName="Область" msprop:Generator_ColumnPropNameInTable="ОбластьColumn" msprop:Generator_ColumnPropNameInRow="Область" msprop:Generator_ColumnVarNameInTable="columnОбласть">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Все_таблицы" msprop:Generator_RowClassName="Все_таблицыRow" msprop:Generator_RowEvHandlerName="Все_таблицыRowChangeEventHandler" msprop:Generator_RowDeletedName="Все_таблицыRowDeleted" msprop:Generator_RowDeletingName="Все_таблицыRowDeleting" msprop:Generator_RowEvArgName="Все_таблицыRowChangeEvent" msprop:Generator_TablePropName="Все_таблицы" msprop:Generator_RowChangedName="Все_таблицыRowChanged" msprop:Generator_UserTableName="Все_таблицы" msprop:Generator_RowChangingName="Все_таблицыRowChanging" msprop:Generator_TableClassName="Все_таблицыDataTable" msprop:Generator_TableVarName="tableВсе_таблицы">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Город" msprop:Generator_UserColumnName="Город" msprop:Generator_ColumnPropNameInTable="ГородColumn" msprop:Generator_ColumnPropNameInRow="Город" msprop:Generator_ColumnVarNameInTable="columnГород">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_заказа_заказ-груз" msprop:Generator_UserColumnName="Код_заказа_заказ-груз" msprop:Generator_ColumnPropNameInTable="_Код_заказа_заказ_грузColumn" msprop:Generator_ColumnPropNameInRow="_Код_заказа_заказ_груз" msprop:Generator_ColumnVarNameInTable="_columnКод_заказа_заказ_груз" type="xs:int" />
+              <xs:element name="Код_Получателя" msprop:Generator_UserColumnName="Код_Получателя" msprop:Generator_ColumnPropNameInTable="Код_ПолучателяColumn" msprop:Generator_ColumnPropNameInRow="Код_Получателя" msprop:Generator_ColumnVarNameInTable="columnКод_Получателя" type="xs:int" />
+              <xs:element name="Код_Отправителя" msprop:Generator_UserColumnName="Код_Отправителя" msprop:Generator_ColumnPropNameInTable="Код_ОтправителяColumn" msprop:Generator_ColumnPropNameInRow="Код_Отправителя" msprop:Generator_ColumnVarNameInTable="columnКод_Отправителя" type="xs:int" />
+              <xs:element name="ФИО_отправителя" msprop:Generator_UserColumnName="ФИО_отправителя" msprop:Generator_ColumnPropNameInTable="ФИО_отправителяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_отправителя" msprop:Generator_ColumnVarNameInTable="columnФИО_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_отправителя" msprop:Generator_UserColumnName="Паспорт_отправителя" msprop:Generator_ColumnPropNameInTable="Паспорт_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_отправителя" msprop:Generator_ColumnVarNameInTable="columnПаспорт_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_отправителя" msprop:Generator_UserColumnName="Телефон_отправителя" msprop:Generator_ColumnPropNameInTable="Телефон_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Телефон_отправителя" msprop:Generator_ColumnVarNameInTable="columnТелефон_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_отправителя" msprop:Generator_UserColumnName="Адрес_отправителя" msprop:Generator_ColumnPropNameInTable="Адрес_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_отправителя" msprop:Generator_ColumnVarNameInTable="columnАдрес_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Область" msprop:Generator_UserColumnName="Область" msprop:Generator_ColumnPropNameInTable="ОбластьColumn" msprop:Generator_ColumnPropNameInRow="Область" msprop:Generator_ColumnVarNameInTable="columnОбласть">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_получателя" msprop:Generator_UserColumnName="ФИО_получателя" msprop:Generator_ColumnPropNameInTable="ФИО_получателяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_получателя" msprop:Generator_ColumnVarNameInTable="columnФИО_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_получателя" msprop:Generator_UserColumnName="Паспорт_получателя" msprop:Generator_ColumnPropNameInTable="Паспорт_получателяColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_получателя" msprop:Generator_ColumnVarNameInTable="columnПаспорт_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_получателя" msprop:Generator_UserColumnName="Телефон_получателя" msprop:Generator_ColumnPropNameInTable="Телефон_получателяColumn" msprop:Generator_ColumnPropNameInRow="Телефон_получателя" msprop:Generator_ColumnVarNameInTable="columnТелефон_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_получателя" msprop:Generator_UserColumnName="Адрес_получателя" msprop:Generator_ColumnPropNameInTable="Адрес_получателяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_получателя" msprop:Generator_ColumnVarNameInTable="columnАдрес_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_рейса" msprop:Generator_UserColumnName="Код_рейса" msprop:Generator_ColumnPropNameInTable="Код_рейсаColumn" msprop:Generator_ColumnPropNameInRow="Код_рейса" msprop:Generator_ColumnVarNameInTable="columnКод_рейса" type="xs:int" />
+              <xs:element name="Код_заказа_заказ-рейс" msprop:Generator_UserColumnName="Код_заказа_заказ-рейс" msprop:Generator_ColumnPropNameInTable="_Код_заказа_заказ_рейсColumn" msprop:Generator_ColumnPropNameInRow="_Код_заказа_заказ_рейс" msprop:Generator_ColumnVarNameInTable="_columnКод_заказа_заказ_рейс" type="xs:int" />
+              <xs:element name="Код_груза" msprop:Generator_UserColumnName="Код_груза" msprop:Generator_ColumnPropNameInTable="Код_грузаColumn" msprop:Generator_ColumnPropNameInRow="Код_груза" msprop:Generator_ColumnVarNameInTable="columnКод_груза" type="xs:int" />
+              <xs:element name="Expr8" msprop:Generator_UserColumnName="Expr8" msprop:Generator_ColumnPropNameInTable="Expr8Column" msprop:Generator_ColumnPropNameInRow="Expr8" msprop:Generator_ColumnVarNameInTable="columnExpr8" type="xs:int" />
+              <xs:element name="Расстояние" msprop:Generator_UserColumnName="Расстояние" msprop:Generator_ColumnPropNameInTable="РасстояниеColumn" msprop:Generator_ColumnPropNameInRow="Расстояние" msprop:Generator_ColumnVarNameInTable="columnРасстояние" type="xs:double" />
+              <xs:element name="Стоимость" msprop:Generator_UserColumnName="Стоимость" msprop:Generator_ColumnPropNameInTable="СтоимостьColumn" msprop:Generator_ColumnPropNameInRow="Стоимость" msprop:Generator_ColumnVarNameInTable="columnСтоимость" type="xs:double" />
+              <xs:element name="Объем_м3" msprop:Generator_UserColumnName="Объем_м3" msprop:Generator_ColumnPropNameInTable="Объем_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_м3" type="xs:double" />
+              <xs:element name="вес_кг" msprop:Generator_UserColumnName="вес_кг" msprop:Generator_ColumnPropNameInTable="вес_кгColumn" msprop:Generator_ColumnPropNameInRow="вес_кг" msprop:Generator_ColumnVarNameInTable="columnвес_кг" type="xs:double" />
+              <xs:element name="объявленная_стоимость_руб" msprop:Generator_UserColumnName="объявленная_стоимость_руб" msprop:Generator_ColumnPropNameInTable="объявленная_стоимость_рубColumn" msprop:Generator_ColumnPropNameInRow="объявленная_стоимость_руб" msprop:Generator_ColumnVarNameInTable="columnобъявленная_стоимость_руб" type="xs:double" />
+              <xs:element name="Вид_Груза" msprop:Generator_UserColumnName="Вид_Груза" msprop:Generator_ColumnPropNameInTable="Вид_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Вид_Груза" msprop:Generator_ColumnVarNameInTable="columnВид_Груза">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Объем_кузова" msprop:Generator_UserColumnName="Объем_кузова" msprop:Generator_ColumnPropNameInTable="Объем_кузоваColumn" msprop:Generator_ColumnPropNameInRow="Объем_кузова" msprop:Generator_ColumnVarNameInTable="columnОбъем_кузова" type="xs:double" />
+              <xs:element name="Вместимость_кузова" msprop:Generator_UserColumnName="Вместимость_кузова" msprop:Generator_ColumnPropNameInTable="Вместимость_кузоваColumn" msprop:Generator_ColumnPropNameInRow="Вместимость_кузова" msprop:Generator_ColumnVarNameInTable="columnВместимость_кузова" type="xs:double" />
+              <xs:element name="Госномер" msprop:Generator_UserColumnName="Госномер" msprop:Generator_ColumnPropNameInTable="ГосномерColumn" msprop:Generator_ColumnPropNameInRow="Госномер" msprop:Generator_ColumnVarNameInTable="columnГосномер">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Объем_груза_м3" msprop:Generator_UserColumnName="Объем_груза_м3" msprop:Generator_ColumnPropNameInTable="Объем_груза_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_груза_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_груза_м3" type="xs:double" />
+              <xs:element name="Вес_груза_кг" msprop:Generator_UserColumnName="Вес_груза_кг" msprop:Generator_ColumnPropNameInTable="Вес_груза_кгColumn" msprop:Generator_ColumnPropNameInRow="Вес_груза_кг" msprop:Generator_ColumnVarNameInTable="columnВес_груза_кг" type="xs:double" />
+              <xs:element name="ФИО_водителя" msprop:Generator_UserColumnName="ФИО_водителя" msprop:Generator_ColumnPropNameInTable="ФИО_водителяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_водителя" msprop:Generator_ColumnVarNameInTable="columnФИО_водителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стаж" msprop:Generator_UserColumnName="Стаж" msprop:Generator_ColumnPropNameInTable="СтажColumn" msprop:Generator_ColumnPropNameInRow="Стаж" msprop:Generator_ColumnVarNameInTable="columnСтаж" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ВсеГрузыВЗаказе" msprop:Generator_RowClassName="ВсеГрузыВЗаказеRow" msprop:Generator_RowEvHandlerName="ВсеГрузыВЗаказеRowChangeEventHandler" msprop:Generator_RowDeletedName="ВсеГрузыВЗаказеRowDeleted" msprop:Generator_RowDeletingName="ВсеГрузыВЗаказеRowDeleting" msprop:Generator_RowEvArgName="ВсеГрузыВЗаказеRowChangeEvent" msprop:Generator_TablePropName="ВсеГрузыВЗаказе" msprop:Generator_RowChangedName="ВсеГрузыВЗаказеRowChanged" msprop:Generator_UserTableName="ВсеГрузыВЗаказе" msprop:Generator_RowChangingName="ВсеГрузыВЗаказеRowChanging" msprop:Generator_TableClassName="ВсеГрузыВЗаказеDataTable" msprop:Generator_TableVarName="tableВсеГрузыВЗаказе">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код" msprop:Generator_UserColumnName="Код" msprop:Generator_ColumnPropNameInTable="КодColumn" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnVarNameInTable="columnКод" type="xs:int" />
+              <xs:element name="ФИО_x0020_получ" msprop:Generator_UserColumnName="ФИО получ" msprop:Generator_ColumnPropNameInTable="ФИО_получColumn" msprop:Generator_ColumnPropNameInRow="ФИО_получ" msprop:Generator_ColumnVarNameInTable="columnФИО_получ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_x0020_получ" msprop:Generator_UserColumnName="Паспорт получ" msprop:Generator_ColumnPropNameInTable="Паспорт_получColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_получ" msprop:Generator_ColumnVarNameInTable="columnПаспорт_получ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_x0020_получ" msprop:Generator_UserColumnName="Телефон получ" msprop:Generator_ColumnPropNameInTable="Телефон_получColumn" msprop:Generator_ColumnPropNameInRow="Телефон_получ" msprop:Generator_ColumnVarNameInTable="columnТелефон_получ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_x0020_отпр" msprop:Generator_UserColumnName="ФИО отпр" msprop:Generator_ColumnPropNameInTable="ФИО_отпрColumn" msprop:Generator_ColumnPropNameInRow="ФИО_отпр" msprop:Generator_ColumnVarNameInTable="columnФИО_отпр">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_x0020_отпр" msprop:Generator_UserColumnName="Паспорт отпр" msprop:Generator_ColumnPropNameInTable="Паспорт_отпрColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_отпр" msprop:Generator_ColumnVarNameInTable="columnПаспорт_отпр">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_x0020_отпр" msprop:Generator_UserColumnName="Телефон отпр" msprop:Generator_ColumnPropNameInTable="Телефон_отпрColumn" msprop:Generator_ColumnPropNameInRow="Телефон_отпр" msprop:Generator_ColumnVarNameInTable="columnТелефон_отпр">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вид_Груза" msprop:Generator_UserColumnName="Вид_Груза" msprop:Generator_ColumnPropNameInTable="Вид_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Вид_Груза" msprop:Generator_ColumnVarNameInTable="columnВид_Груза">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город_x0020_получателя" msprop:Generator_UserColumnName="Город получателя" msprop:Generator_ColumnPropNameInTable="Город_получателяColumn" msprop:Generator_ColumnPropNameInRow="Город_получателя" msprop:Generator_ColumnVarNameInTable="columnГород_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город_x0020_отправителя" msprop:Generator_UserColumnName="Город отправителя" msprop:Generator_ColumnPropNameInTable="Город_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Город_отправителя" msprop:Generator_ColumnVarNameInTable="columnГород_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_оптравителя" msprop:Generator_UserColumnName="Адрес оптравителя" msprop:Generator_ColumnPropNameInTable="Адрес_оптравителяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_оптравителя" msprop:Generator_ColumnVarNameInTable="columnАдрес_оптравителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_получателя" msprop:Generator_UserColumnName="Адрес получателя" msprop:Generator_ColumnPropNameInTable="Адрес_получателяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_получателя" msprop:Generator_ColumnVarNameInTable="columnАдрес_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_заказа" msprop:Generator_UserColumnName="Код_заказа" msprop:Generator_ColumnPropNameInTable="Код_заказаColumn" msprop:Generator_ColumnPropNameInRow="Код_заказа" msprop:Generator_ColumnVarNameInTable="columnКод_заказа" type="xs:int" />
+              <xs:element name="Код_груза" msprop:Generator_UserColumnName="Код_груза" msprop:Generator_ColumnPropNameInTable="Код_грузаColumn" msprop:Generator_ColumnPropNameInRow="Код_груза" msprop:Generator_ColumnVarNameInTable="columnКод_груза" type="xs:int" />
+              <xs:element name="Расстояние" msprop:Generator_UserColumnName="Расстояние" msprop:Generator_ColumnPropNameInTable="РасстояниеColumn" msprop:Generator_ColumnPropNameInRow="Расстояние" msprop:Generator_ColumnVarNameInTable="columnРасстояние" type="xs:double" />
+              <xs:element name="Стоимость" msprop:Generator_UserColumnName="Стоимость" msprop:Generator_ColumnPropNameInTable="СтоимостьColumn" msprop:Generator_ColumnPropNameInRow="Стоимость" msprop:Generator_ColumnVarNameInTable="columnСтоимость" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Грузы" msprop:Generator_RowClassName="ГрузыRow" msprop:Generator_RowEvHandlerName="ГрузыRowChangeEventHandler" msprop:Generator_RowDeletedName="ГрузыRowDeleted" msprop:Generator_RowDeletingName="ГрузыRowDeleting" msprop:Generator_RowEvArgName="ГрузыRowChangeEvent" msprop:Generator_TablePropName="Грузы" msprop:Generator_RowChangedName="ГрузыRowChanged" msprop:Generator_UserTableName="Грузы" msprop:Generator_RowChangingName="ГрузыRowChanging" msprop:Generator_TableClassName="ГрузыDataTable" msprop:Generator_TableVarName="tableГрузы">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_Груза" msprop:Generator_UserColumnName="Код_Груза" msprop:Generator_ColumnPropNameInTable="Код_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Код_Груза" msprop:Generator_ColumnVarNameInTable="columnКод_Груза" type="xs:int" />
+              <xs:element name="Объем_м3" msprop:Generator_UserColumnName="Объем_м3" msprop:Generator_ColumnPropNameInTable="Объем_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_м3" type="xs:double" />
+              <xs:element name="вес_кг" msprop:Generator_UserColumnName="вес_кг" msprop:Generator_ColumnPropNameInTable="вес_кгColumn" msprop:Generator_ColumnPropNameInRow="вес_кг" msprop:Generator_ColumnVarNameInTable="columnвес_кг" type="xs:double" />
+              <xs:element name="объявленная_стоимость_руб" msprop:Generator_UserColumnName="объявленная_стоимость_руб" msprop:Generator_ColumnPropNameInTable="объявленная_стоимость_рубColumn" msprop:Generator_ColumnPropNameInRow="объявленная_стоимость_руб" msprop:Generator_ColumnVarNameInTable="columnобъявленная_стоимость_руб" type="xs:double" />
+              <xs:element name="Код_ВидГруза" msprop:Generator_UserColumnName="Код_ВидГруза" msprop:Generator_ColumnPropNameInTable="Код_ВидГрузаColumn" msprop:Generator_ColumnPropNameInRow="Код_ВидГруза" msprop:Generator_ColumnVarNameInTable="columnКод_ВидГруза" type="xs:int" />
+              <xs:element name="Вид_Груза" msprop:Generator_UserColumnName="Вид_Груза" msprop:Generator_ColumnPropNameInTable="Вид_ГрузаColumn" msprop:Generator_ColumnPropNameInRow="Вид_Груза" msprop:Generator_ColumnVarNameInTable="columnВид_Груза">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Заказы" msprop:Generator_RowClassName="ЗаказыRow" msprop:Generator_RowEvHandlerName="ЗаказыRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыRowDeleted" msprop:Generator_RowDeletingName="ЗаказыRowDeleting" msprop:Generator_RowEvArgName="ЗаказыRowChangeEvent" msprop:Generator_TablePropName="Заказы" msprop:Generator_RowChangedName="ЗаказыRowChanged" msprop:Generator_UserTableName="Заказы" msprop:Generator_RowChangingName="ЗаказыRowChanging" msprop:Generator_TableClassName="ЗаказыDataTable" msprop:Generator_TableVarName="tableЗаказы">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_Заказа" msprop:Generator_UserColumnName="Код_Заказа" msprop:Generator_ColumnPropNameInTable="Код_ЗаказаColumn" msprop:Generator_ColumnPropNameInRow="Код_Заказа" msprop:Generator_ColumnVarNameInTable="columnКод_Заказа" type="xs:int" />
+              <xs:element name="ФИО_x0020_отправителя" msprop:Generator_UserColumnName="ФИО отправителя" msprop:Generator_ColumnPropNameInTable="ФИО_отправителяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_отправителя" msprop:Generator_ColumnVarNameInTable="columnФИО_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_x0020_отправителя" msprop:Generator_UserColumnName="Паспорт отправителя" msprop:Generator_ColumnPropNameInTable="Паспорт_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_отправителя" msprop:Generator_ColumnVarNameInTable="columnПаспорт_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_x0020_отправителя" msprop:Generator_UserColumnName="Телефон отправителя" msprop:Generator_ColumnPropNameInTable="Телефон_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Телефон_отправителя" msprop:Generator_ColumnVarNameInTable="columnТелефон_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_отправителя" msprop:Generator_UserColumnName="Адрес отправителя" msprop:Generator_ColumnPropNameInTable="Адрес_отправителяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_отправителя" msprop:Generator_ColumnVarNameInTable="columnАдрес_отправителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ФИО_x0020_получателя" msprop:Generator_UserColumnName="ФИО получателя" msprop:Generator_ColumnPropNameInTable="ФИО_получателяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_получателя" msprop:Generator_ColumnVarNameInTable="columnФИО_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон_x0020_получателя" msprop:Generator_UserColumnName="Телефон получателя" msprop:Generator_ColumnPropNameInTable="Телефон_получателяColumn" msprop:Generator_ColumnPropNameInRow="Телефон_получателя" msprop:Generator_ColumnVarNameInTable="columnТелефон_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_получателя" msprop:Generator_UserColumnName="Адрес получателя" msprop:Generator_ColumnPropNameInTable="Адрес_получателяColumn" msprop:Generator_ColumnPropNameInRow="Адрес_получателя" msprop:Generator_ColumnVarNameInTable="columnАдрес_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт_x0020_получателя" msprop:Generator_UserColumnName="Паспорт получателя" msprop:Generator_ColumnPropNameInTable="Паспорт_получателяColumn" msprop:Generator_ColumnPropNameInRow="Паспорт_получателя" msprop:Generator_ColumnVarNameInTable="columnПаспорт_получателя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город_x0020_получ" msprop:Generator_UserColumnName="Город получ" msprop:Generator_ColumnPropNameInTable="Город_получColumn" msprop:Generator_ColumnPropNameInRow="Город_получ" msprop:Generator_ColumnVarNameInTable="columnГород_получ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город_x0020_отпр" msprop:Generator_UserColumnName="Город отпр" msprop:Generator_ColumnPropNameInTable="Город_отпрColumn" msprop:Generator_ColumnPropNameInRow="Город_отпр" msprop:Generator_ColumnVarNameInTable="columnГород_отпр">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_Отправителя" msprop:Generator_UserColumnName="Код_Отправителя" msprop:Generator_ColumnPropNameInTable="Код_ОтправителяColumn" msprop:Generator_ColumnPropNameInRow="Код_Отправителя" msprop:Generator_ColumnVarNameInTable="columnКод_Отправителя" type="xs:int" />
+              <xs:element name="Код_Получателя" msprop:Generator_UserColumnName="Код_Получателя" msprop:Generator_ColumnPropNameInTable="Код_ПолучателяColumn" msprop:Generator_ColumnPropNameInRow="Код_Получателя" msprop:Generator_ColumnVarNameInTable="columnКод_Получателя" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ЗаказыНаРейсе" msprop:Generator_RowClassName="ЗаказыНаРейсеRow" msprop:Generator_RowEvHandlerName="ЗаказыНаРейсеRowChangeEventHandler" msprop:Generator_RowDeletedName="ЗаказыНаРейсеRowDeleted" msprop:Generator_RowDeletingName="ЗаказыНаРейсеRowDeleting" msprop:Generator_RowEvArgName="ЗаказыНаРейсеRowChangeEvent" msprop:Generator_TablePropName="ЗаказыНаРейсе" msprop:Generator_RowChangedName="ЗаказыНаРейсеRowChanged" msprop:Generator_UserTableName="ЗаказыНаРейсе" msprop:Generator_RowChangingName="ЗаказыНаРейсеRowChanging" msprop:Generator_TableClassName="ЗаказыНаРейсеDataTable" msprop:Generator_TableVarName="tableЗаказыНаРейсе">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_заказа" msprop:Generator_UserColumnName="Код_заказа" msprop:Generator_ColumnPropNameInTable="Код_заказаColumn" msprop:Generator_ColumnPropNameInRow="Код_заказа" msprop:Generator_ColumnVarNameInTable="columnКод_заказа" type="xs:int" />
+              <xs:element name="Код" msprop:Generator_UserColumnName="Код" msprop:Generator_ColumnPropNameInTable="КодColumn" msprop:Generator_ColumnPropNameInRow="Код" msprop:Generator_ColumnVarNameInTable="columnКод" type="xs:int" />
+              <xs:element name="Госномер" msprop:Generator_UserColumnName="Госномер" msprop:Generator_ColumnPropNameInTable="ГосномерColumn" msprop:Generator_ColumnPropNameInRow="Госномер" msprop:Generator_ColumnVarNameInTable="columnГосномер">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отправитель" msprop:Generator_UserColumnName="Отправитель" msprop:Generator_ColumnPropNameInTable="ОтправительColumn" msprop:Generator_ColumnPropNameInRow="Отправитель" msprop:Generator_ColumnVarNameInTable="columnОтправитель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город" msprop:Generator_UserColumnName="Город" msprop:Generator_ColumnPropNameInTable="ГородColumn" msprop:Generator_ColumnPropNameInRow="Город" msprop:Generator_ColumnVarNameInTable="columnГород">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Отправители" msprop:Generator_RowClassName="ОтправителиRow" msprop:Generator_RowEvHandlerName="ОтправителиRowChangeEventHandler" msprop:Generator_RowDeletedName="ОтправителиRowDeleted" msprop:Generator_RowDeletingName="ОтправителиRowDeleting" msprop:Generator_RowEvArgName="ОтправителиRowChangeEvent" msprop:Generator_TablePropName="Отправители" msprop:Generator_RowChangedName="ОтправителиRowChanged" msprop:Generator_UserTableName="Отправители" msprop:Generator_RowChangingName="ОтправителиRowChanging" msprop:Generator_TableClassName="ОтправителиDataTable" msprop:Generator_TableVarName="tableОтправители">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_Отправителя" msprop:Generator_UserColumnName="Код_Отправителя" msprop:Generator_ColumnPropNameInTable="Код_ОтправителяColumn" msprop:Generator_ColumnPropNameInRow="Код_Отправителя" msprop:Generator_ColumnVarNameInTable="columnКод_Отправителя" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_UserColumnName="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт" msprop:Generator_UserColumnName="Паспорт" msprop:Generator_ColumnPropNameInTable="ПаспортColumn" msprop:Generator_ColumnPropNameInRow="Паспорт" msprop:Generator_ColumnVarNameInTable="columnПаспорт">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_UserColumnName="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_UserColumnName="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnVarNameInTable="columnАдрес">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Область" msprop:Generator_UserColumnName="Область" msprop:Generator_ColumnPropNameInTable="ОбластьColumn" msprop:Generator_ColumnPropNameInRow="Область" msprop:Generator_ColumnVarNameInTable="columnОбласть">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город" msprop:Generator_UserColumnName="Город" msprop:Generator_ColumnPropNameInTable="ГородColumn" msprop:Generator_ColumnPropNameInRow="Город" msprop:Generator_ColumnVarNameInTable="columnГород">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_области" msprop:Generator_UserColumnName="Код_области" msprop:Generator_ColumnPropNameInTable="Код_областиColumn" msprop:Generator_ColumnPropNameInRow="Код_области" msprop:Generator_ColumnVarNameInTable="columnКод_области" type="xs:int" />
+              <xs:element name="Код_города" msprop:Generator_UserColumnName="Код_города" msprop:Generator_ColumnPropNameInTable="Код_городаColumn" msprop:Generator_ColumnPropNameInRow="Код_города" msprop:Generator_ColumnVarNameInTable="columnКод_города" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Получатели" msprop:Generator_RowClassName="ПолучателиRow" msprop:Generator_RowEvHandlerName="ПолучателиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПолучателиRowDeleted" msprop:Generator_RowDeletingName="ПолучателиRowDeleting" msprop:Generator_RowEvArgName="ПолучателиRowChangeEvent" msprop:Generator_TablePropName="Получатели" msprop:Generator_RowChangedName="ПолучателиRowChanged" msprop:Generator_UserTableName="Получатели" msprop:Generator_RowChangingName="ПолучателиRowChanging" msprop:Generator_TableClassName="ПолучателиDataTable" msprop:Generator_TableVarName="tableПолучатели">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_получателя" msprop:Generator_UserColumnName="Код_получателя" msprop:Generator_ColumnPropNameInTable="Код_получателяColumn" msprop:Generator_ColumnPropNameInRow="Код_получателя" msprop:Generator_ColumnVarNameInTable="columnКод_получателя" type="xs:int" />
+              <xs:element name="ФИО" msprop:Generator_UserColumnName="ФИО" msprop:Generator_ColumnPropNameInTable="ФИОColumn" msprop:Generator_ColumnPropNameInRow="ФИО" msprop:Generator_ColumnVarNameInTable="columnФИО">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Паспорт" msprop:Generator_UserColumnName="Паспорт" msprop:Generator_ColumnPropNameInTable="ПаспортColumn" msprop:Generator_ColumnPropNameInRow="Паспорт" msprop:Generator_ColumnVarNameInTable="columnПаспорт">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_UserColumnName="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес" msprop:Generator_UserColumnName="Адрес" msprop:Generator_ColumnPropNameInTable="АдресColumn" msprop:Generator_ColumnPropNameInRow="Адрес" msprop:Generator_ColumnVarNameInTable="columnАдрес">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Город" msprop:Generator_UserColumnName="Город" msprop:Generator_ColumnPropNameInTable="ГородColumn" msprop:Generator_ColumnPropNameInRow="Город" msprop:Generator_ColumnVarNameInTable="columnГород">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Область" msprop:Generator_UserColumnName="Область" msprop:Generator_ColumnPropNameInTable="ОбластьColumn" msprop:Generator_ColumnPropNameInRow="Область" msprop:Generator_ColumnVarNameInTable="columnОбласть">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_области" msprop:Generator_UserColumnName="Код_области" msprop:Generator_ColumnPropNameInTable="Код_областиColumn" msprop:Generator_ColumnPropNameInRow="Код_области" msprop:Generator_ColumnVarNameInTable="columnКод_области" type="xs:int" />
+              <xs:element name="Код_города" msprop:Generator_UserColumnName="Код_города" msprop:Generator_ColumnPropNameInTable="Код_городаColumn" msprop:Generator_ColumnPropNameInRow="Код_города" msprop:Generator_ColumnVarNameInTable="columnКод_города" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Рейсы" msprop:Generator_RowClassName="РейсыRow" msprop:Generator_RowEvHandlerName="РейсыRowChangeEventHandler" msprop:Generator_RowDeletedName="РейсыRowDeleted" msprop:Generator_RowDeletingName="РейсыRowDeleting" msprop:Generator_RowEvArgName="РейсыRowChangeEvent" msprop:Generator_TablePropName="Рейсы" msprop:Generator_RowChangedName="РейсыRowChanged" msprop:Generator_UserTableName="Рейсы" msprop:Generator_RowChangingName="РейсыRowChanging" msprop:Generator_TableClassName="РейсыDataTable" msprop:Generator_TableVarName="tableРейсы">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_рейса" msprop:Generator_UserColumnName="Код_рейса" msprop:Generator_ColumnPropNameInTable="Код_рейсаColumn" msprop:Generator_ColumnPropNameInRow="Код_рейса" msprop:Generator_ColumnVarNameInTable="columnКод_рейса" type="xs:int" />
+              <xs:element name="Объем_груза_м3" msprop:Generator_UserColumnName="Объем_груза_м3" msprop:Generator_ColumnPropNameInTable="Объем_груза_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_груза_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_груза_м3" type="xs:double" />
+              <xs:element name="Вес_груза_кг" msprop:Generator_UserColumnName="Вес_груза_кг" msprop:Generator_ColumnPropNameInTable="Вес_груза_кгColumn" msprop:Generator_ColumnPropNameInRow="Вес_груза_кг" msprop:Generator_ColumnVarNameInTable="columnВес_груза_кг" type="xs:double" />
+              <xs:element name="Код_транспорта" msprop:Generator_UserColumnName="Код_транспорта" msprop:Generator_ColumnPropNameInTable="Код_транспортаColumn" msprop:Generator_ColumnPropNameInRow="Код_транспорта" msprop:Generator_ColumnVarNameInTable="columnКод_транспорта" type="xs:int" />
+              <xs:element name="ФИО_водителя" msprop:Generator_UserColumnName="ФИО_водителя" msprop:Generator_ColumnPropNameInTable="ФИО_водителяColumn" msprop:Generator_ColumnPropNameInRow="ФИО_водителя" msprop:Generator_ColumnVarNameInTable="columnФИО_водителя">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Госномер" msprop:Generator_UserColumnName="Госномер" msprop:Generator_ColumnPropNameInTable="ГосномерColumn" msprop:Generator_ColumnPropNameInRow="Госномер" msprop:Generator_ColumnVarNameInTable="columnГосномер">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вместимость_кг" msprop:Generator_UserColumnName="Вместимость_кг" msprop:Generator_ColumnPropNameInTable="Вместимость_кгColumn" msprop:Generator_ColumnPropNameInRow="Вместимость_кг" msprop:Generator_ColumnVarNameInTable="columnВместимость_кг" type="xs:double" />
+              <xs:element name="Объем_кузова_м3" msprop:Generator_UserColumnName="Объем_кузова_м3" msprop:Generator_ColumnPropNameInTable="Объем_кузова_м3Column" msprop:Generator_ColumnPropNameInRow="Объем_кузова_м3" msprop:Generator_ColumnVarNameInTable="columnОбъем_кузова_м3" type="xs:double" />
+              <xs:element name="Стаж" msprop:Generator_UserColumnName="Стаж" msprop:Generator_ColumnPropNameInTable="СтажColumn" msprop:Generator_ColumnPropNameInRow="Стаж" msprop:Generator_ColumnVarNameInTable="columnСтаж" type="xs:int" />
+              <xs:element name="Код_водителя" msprop:Generator_UserColumnName="Код_водителя" msprop:Generator_ColumnPropNameInTable="Код_водителяColumn" msprop:Generator_ColumnPropNameInRow="Код_водителя" msprop:Generator_ColumnVarNameInTable="columnКод_водителя" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Весь_транспорт" />
+      <xs:field xpath="mstns:Код_машины" />
+    </xs:unique>
+    <xs:unique name="Вид_груза_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Вид_груза" />
+      <xs:field xpath="mstns:Код_Груза" />
+    </xs:unique>
+    <xs:unique name="Все_водители_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Все_водители" />
+      <xs:field xpath="mstns:Код_водителя" />
+    </xs:unique>
+    <xs:unique name="Все_города_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Все_города" />
+      <xs:field xpath="mstns:Код_города" />
+    </xs:unique>
+    <xs:unique name="Все_области_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Все_области" />
+      <xs:field xpath="mstns:Код_области" />
+    </xs:unique>
+    <xs:unique name="Все_таблицы_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Все_таблицы" />
+      <xs:field xpath="mstns:Код_заказа_заказ-груз" />
+    </xs:unique>
+    <xs:unique name="ВсеГрузыВЗаказе_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ВсеГрузыВЗаказе" />
+      <xs:field xpath="mstns:Код" />
+    </xs:unique>
+    <xs:unique name="Грузы_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Грузы" />
+      <xs:field xpath="mstns:Код_Груза" />
+    </xs:unique>
+    <xs:unique name="Заказы_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Заказы" />
+      <xs:field xpath="mstns:Код_Заказа" />
+    </xs:unique>
+    <xs:unique name="ЗаказыНаРейсе_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ЗаказыНаРейсе" />
+      <xs:field xpath="mstns:Код" />
+    </xs:unique>
+    <xs:unique name="Отправители_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Отправители" />
+      <xs:field xpath="mstns:Код_Отправителя" />
+    </xs:unique>
+    <xs:unique name="Получатели_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Получатели" />
+      <xs:field xpath="mstns:Код_получателя" />
+    </xs:unique>
+    <xs:unique name="Рейсы_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Рейсы" />
+      <xs:field xpath="mstns:Код_рейса" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Область_Город" msdata:parent="Все_области" msdata:child="Все_города" msdata:parentkey="Код_области" msdata:childkey="Код_области" msprop:Generator_UserParentTable="Все_области" msprop:Generator_UserChildTable="Все_города" msprop:Generator_RelationVarName="relationFK_Область_Город" msprop:Generator_UserRelationName="FK_Область_Город" msprop:Generator_ChildPropName="GetВсе_городаRows" msprop:Generator_ParentPropName="Все_областиRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
